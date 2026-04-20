@@ -48,12 +48,10 @@ const memes = {
 
 // ==================== 初始化 ====================
 function init() {
-  loadData().then(data => {
-    horsesData = data;
-    updateStats();
-    updateHorseCount();
-    console.log(`已加载 ${horsesData.length} 匹马的数据`);
-  });
+  horsesData = HORSES_DATA;
+  updateStats();
+  updateHorseCount();
+  console.log(`已加载 ${horsesData.length} 匹马的数据`);
 }
 
 // ==================== 母亲查询 ====================
