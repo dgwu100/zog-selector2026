@@ -30,19 +30,19 @@ const queryResult = document.getElementById('query-result');
 // ==================== 梗图配置 ====================
 const memes = {
   1: [
-    { image: 'images/g1/meme1.jpg', text: 'Group 1马！今天的运气爆棚！' },
-    { image: 'images/g1/meme2.jpg', text: '精英赛马，期待你的表现！' },
-    { image: 'images/g1/meme3.jpg', text: '北方牧场品质，值得信赖！' }
+    { image: './G1-1.jpg', text: '北方牧场产出' },
+    { image: './G1-2.jpg', text: '精选/Mix高价马' },
+    { image: './G1-3.jpg', text: '社台俱乐部募集' },
+    { image: './G1-5.jpg', text: '种马马主关联' },
+    { image: './G1-6.jpg', text: '高身价拍卖' }
   ],
   2: [
-    { image: 'images/g2/meme1.jpg', text: 'Group 2，稳健型选手！' },
-    { image: 'images/g2/meme2.jpg', text: '潜力股，说不定是黑马！' },
-    { image: 'images/g2/meme3.jpg', text: '好好培养，前途无量！' }
+    { image: './G2-1.jpg', text: '普通俱乐部募集' },
+    { image: './G2-2.jpg', text: '拍卖中等价位' },
+    { image: './G2-3.jpg', text: '其他高价马' }
   ],
   3: [
-    { image: 'images/g3/meme1.jpg', text: 'Group 3，捡到宝了！' },
-    { image: 'images/g3/meme2.jpg', text: '说不定是未来的大物！' },
-    { image: 'images/g3/meme3.jpg', text: '纯真的梦想，无价的快乐！' }
+    { image: './G3.jpg', text: '普通马' }
   ]
 };
 
@@ -93,10 +93,13 @@ function queryMother() {
   const motherCount = motherSet.size;
   let memeHtml = '';
   const memeRule = motherCount === 1 ? matches[0].rule : '未匹配';
-  
-  const imageName = existingImages.includes(memeRule) ? memeRule : null;
+
+  // 从多个规则中随机选择一个
+  const rules = memeRule.split('+');
+  const selectedRule = rules[Math.floor(Math.random() * rules.length)];
+  const imageName = existingImages.includes(selectedRule) ? selectedRule : null;
   if (imageName) {
-    memeHtml = `<img src="./images/${imageName}.jpg" class="result-meme" alt="梗图">`;
+    memeHtml = `<img src="./${imageName}.jpg" class="result-meme" alt="梗图">`;
   } else {
     memeHtml = `<div class="result-meme-text">梗图募集中</div>`;
   }
@@ -147,7 +150,7 @@ function showRuleMeme(rule) {
         // 图片加载失败时显示占位
         this.style.display = 'none';
       };
-      memeImage.src = `./images/${imageName}.jpg`;
+      memeImage.src = `./${imageName}.jpg`;
     }
     if (memeText) memeText.textContent = '';
   } else {
