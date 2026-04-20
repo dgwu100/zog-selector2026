@@ -6,8 +6,6 @@ const HORSES_DATA = [{"horseId":"2024100001","mother":"リラカノープス","c
  * 赛马Group选择器 - 主逻辑
  */
 
-import { loadData } from './data.js';
-
 // 全局状态
 let horsesData = [];
 let currentFilter = 'all';
