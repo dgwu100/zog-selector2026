@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>赛马Group选择器</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>🤖 ZOG 2026 Group查找器１.0版</h1>
+      <p class="subtitle">使用马妈名称，看看这条小马属于哪个Group</p>
+    </header>
+
+    <main class="main">
+      <!-- 母亲查询 -->
+      <section class="query-section">
+        <h2>查询小马所属Group</h2>
+        <div class="query-form">
+          <input type="text" id="mother-input" placeholder="输入母亲马名..." class="query-input">
+          <button class="query-btn" id="query-btn">查询</button>
+        </div>
+        <div class="query-result" id="query-result"></div>
+      </section>
+
+      <!-- Group筛选按钮 - 暂不开放 -->
+      <!-- <section class="filter-section">
+        <h2>随机选择（先选Group范围）</h2>
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">全部</button>
+          <button class="filter-btn g1" data-filter="1">Group 1</button>
+          <button class="filter-btn g2" data-filter="2">Group 2</button>
+          <button class="filter-btn g3" data-filter="3">Group 3</button>
+        </div>
+        <p class="filter-info">当前池: <span id="horse-count">0</span> 匹马</p>
+      </section>
+
+      <section class="action-section">
+        <button class="select-btn" id="select-btn">
+          <span class="btn-text">🎲 随机选择</span>
+          <span class="btn-icon">✨</span>
+        </button>
+      </section> -->
+
+      <!-- 结果展示区 - 暂不开放 -->
+      <!-- <section class="result-section" id="result-section">
+        <div class="result-card" id="result-card">
+          <div class="result-placeholder">
+            <p>点击上方按钮开始选择</p>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- 统计信息 -->
+      <section class="stats-section">
+        <div class="stats-grid">
+          <div class="stat-item g1-stat">
+            <span class="stat-label">Group 1</span>
+            <span class="stat-value" id="stat-g1">0</span>
+          </div>
+          <div class="stat-item g2-stat">
+            <span class="stat-label">Group 2</span>
+            <span class="stat-value" id="stat-g2">0</span>
+          </div>
+          <div class="stat-item g3-stat">
+            <span class="stat-label">Group 3</span>
+            <span class="stat-value" id="stat-g3">0</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>数据来源: netkeiba以及某不知名的ApoA梦</p>
+    </footer>
+  </div>
+
+  <!-- 梗图弹窗 -->
+  <div class="meme-modal" id="meme-modal">
+    <div class="meme-content">
+      <button class="meme-close" id="meme-close">&times;</button>
+      <div class="meme-image-container">
+        <img src="" alt="梗图" id="meme-image">
+      </div>
+      <div class="meme-text" id="meme-text"></div>
+    </div>
+  </div>
+
+  <script src="js/app_all.js"></script>
+</body>
+</html>
