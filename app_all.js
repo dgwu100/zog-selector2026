@@ -82,6 +82,16 @@ function init() {
   updateStats();
   updateHorseCount();
   console.log('已加载 ' + horsesData.length + ' 匹马的数据');
+  
+  // 绑定事件
+  motherInput.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') queryMother();
+  });
+  queryBtn.addEventListener('click', queryMother);
+  
+  if (selectBtn) {
+    selectBtn.addEventListener('click', selectRandomHorse);
+  }
 }
 
 // 页面加载完成后初始化
@@ -176,12 +186,6 @@ function queryMother() {
   queryResult.innerHTML = memeHtml + recommendLabelHtml + html;
 }
 
-// 回车查询
-motherInput.addEventListener('keypress', (e) => {
-  if (e.key === 'Enter') queryMother();
-});
-queryBtn.addEventListener('click', queryMother);
-
 // ==================== 梗图显示 ====================
 // 已有图片: G1-1, G1-2, G2-1, G2-2, G3, 未匹配
 const existingImages = ['G1-1', 'G1-2', 'G2-1', 'G2-2', 'G3', '未匹配'];
@@ -261,9 +265,6 @@ if (filterBtns.length > 0) {
 }
 
 // ==================== 随机选择逻辑 ====================
-if (selectBtn) {
-  selectBtn.addEventListener('click', selectRandomHorse);
-}
 
 async function selectRandomHorse() {
   if (isAnimating) return;
@@ -515,6 +516,3 @@ function createSingleFirework(container, colors) {
     }, 1500);
   }
 }
-
-// ==================== 启动 ====================
-document.addEventListener('DOMContentLoaded', init);
