@@ -188,7 +188,7 @@ function queryMother() {
 
 // ==================== 梗图显示 ====================
 // 已有图片: G1-1, G1-2, G2-1, G2-2, G3, 未匹配
-const existingImages = ['G1-1', 'G1-2', 'G2-1', 'G2-2', 'G3', '未匹配'];
+const existingImages = ['G1-1', 'G1-2', 'G1-3', 'G1-5', 'G1-6', 'G2-1', 'G2-2', 'G2-3', 'G3', '未匹配', '骆驼'];
 
 function showRuleMeme(rule) {
   if (!memeModal) return;
