@@ -282,7 +282,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "サートゥルナーリア"
+    "father": "サートゥルナーリア",
+    "motherCh": "湘南抚子",
+    "motherEn": "Shonan Nadeshiko"
   },
   {
     "horseId": "2024100020",
@@ -342,7 +344,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "キタサンブラック"
+    "father": "キタサンブラック",
+    "motherCh": "春雷",
+    "motherEn": "Spring Thunder"
   },
   {
     "horseId": "2024100024",
@@ -792,7 +796,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "ブリックスアンドモルタル"
+    "father": "ブリックスアンドモルタル",
+    "motherCh": "马国女神",
+    "motherEn": "Maltese Diosa"
   },
   {
     "horseId": "2024100054",
@@ -2007,7 +2013,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "モーリス"
+    "father": "モーリス",
+    "motherCh": "敏智女神",
+    "motherEn": "Pallas Athena"
   },
   {
     "horseId": "2024100135",
@@ -3567,7 +3575,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "レイデオロ"
+    "father": "レイデオロ",
+    "motherCh": "知爱有情",
+    "motherEn": "Savoir Aimer"
   },
   {
     "horseId": "2024100239",
@@ -8217,7 +8227,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "ダノンスマッシュ"
+    "father": "ダノンスマッシュ",
+    "motherCh": "妙小姐",
+    "motherEn": "Miss Mamma Mia"
   },
   {
     "horseId": "2024100549",
@@ -8622,7 +8634,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "シュヴァルグラン"
+    "father": "シュヴァルグラン",
+    "motherCh": "浮世之风",
+    "motherEn": "Ukiyono Kaze"
   },
   {
     "horseId": "2024100576",
@@ -9147,7 +9161,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "ニューイヤーズデイ"
+    "father": "ニューイヤーズデイ",
+    "motherCh": "东宝西风",
+    "motherEn": "Toho Aires"
   },
   {
     "horseId": "2024100611",
@@ -9162,7 +9178,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "マジェスティックウォリアー"
+    "father": "マジェスティックウォリアー",
+    "motherCh": "东宝殷红",
+    "motherEn": "Toho Amapola"
   },
   {
     "horseId": "2024100612",
@@ -9657,7 +9675,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "モーリス"
+    "father": "モーリス",
+    "motherCh": "加勒比金",
+    "motherEn": "Caribbean Gold"
   },
   {
     "horseId": "2024100645",
@@ -9942,7 +9962,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "エピファネイア"
+    "father": "エピファネイア",
+    "motherCh": "鲜甜软果",
+    "motherEn": "Soft Fruit"
   },
   {
     "horseId": "2024100664",
@@ -10287,7 +10309,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "キタサンブラック"
+    "father": "キタサンブラック",
+    "motherCh": "潮流评审",
+    "motherEn": "Fashionista"
   },
   {
     "horseId": "2024100687",
@@ -10587,7 +10611,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "デクラレーションオブウォー"
+    "father": "デクラレーションオブウォー",
+    "motherCh": "火箭升空",
+    "motherEn": "Roquette"
   },
   {
     "horseId": "2024100707",
@@ -14187,7 +14213,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "イスラボニータ"
+    "father": "イスラボニータ",
+    "motherCh": "竹园美景",
+    "motherEn": "T M Churasan"
   },
   {
     "horseId": "2024100947",
@@ -16992,7 +17020,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "モズアスコット"
+    "father": "モズアスコット",
+    "motherCh": "蛋黄花",
+    "motherEn": "G Plumeria"
   },
   {
     "horseId": "2024101134",
@@ -18612,7 +18642,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "キタサンブラック"
+    "father": "キタサンブラック",
+    "motherCh": "大名妃子",
+    "motherEn": "Daimei Princess"
   },
   {
     "horseId": "2024101242",
@@ -19377,7 +19409,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "キタサンブラック"
+    "father": "キタサンブラック",
+    "motherCh": "盈宝理惠",
+    "motherEn": "Rieno Tesoro"
   },
   {
     "horseId": "2024101293",
@@ -19602,7 +19636,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "ロードカナロア"
+    "father": "ロードカナロア",
+    "motherCh": "真诚少女",
+    "motherEn": "Straight Girl"
   },
   {
     "horseId": "2024101308",
@@ -19617,7 +19653,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "コントレイル"
+    "father": "コントレイル",
+    "motherCh": "唐吉快跑",
+    "motherEn": "Let‘s Go Donki"
   },
   {
     "horseId": "2024101309",
@@ -21342,7 +21380,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "モーリス"
+    "father": "モーリス",
+    "motherCh": "罗马芝味",
+    "motherEn": "Pecorino Romano"
   },
   {
     "horseId": "2024101424",
@@ -27387,7 +27427,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "イスラボニータ"
+    "father": "イスラボニータ",
+    "motherCh": "重生",
+    "motherEn": "A Shin Returns"
   },
   {
     "horseId": "2024101827",
@@ -27537,7 +27579,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "サリオス"
+    "father": "サリオス",
+    "motherCh": "昇龙明月",
+    "motherEn": "Shoryu Moon"
   },
   {
     "horseId": "2024101837",
@@ -27942,7 +27986,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "ビッグアーサー"
+    "father": "ビッグアーサー",
+    "motherCh": "美钻锁钥",
+    "motherEn": "Key Dia"
   },
   {
     "horseId": "2024101864",
@@ -28362,7 +28408,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "モズアスコット"
+    "father": "モズアスコット",
+    "motherCh": "魔族闪焰",
+    "motherEn": "Mozu Superflare"
   },
   {
     "horseId": "2024101892",
@@ -28392,7 +28440,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "キタサンブラック"
+    "father": "キタサンブラック",
+    "motherCh": "神域",
+    "motherEn": "Lugar Santo"
   },
   {
     "horseId": "2024101894",
@@ -30117,7 +30167,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "レイデオロ"
+    "father": "レイデオロ",
+    "motherCh": "火星花",
+    "motherEn": "Crocosmia"
   },
   {
     "horseId": "2024102009",
@@ -33387,7 +33439,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "シスキン"
+    "father": "シスキン",
+    "motherCh": "芳华十八",
+    "motherEn": "Eighteen Girl"
   },
   {
     "horseId": "2024102227",
@@ -33777,7 +33831,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "エピファネイア"
+    "father": "エピファネイア",
+    "motherCh": "劲精灵",
+    "motherEn": "Super Wooper"
   },
   {
     "horseId": "2024102253",
@@ -33912,7 +33968,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "ダノンレジェンド"
+    "father": "ダノンレジェンド",
+    "motherCh": "电工使者",
+    "motherEn": "Denko Ange"
   },
   {
     "horseId": "2024102262",
@@ -34062,7 +34120,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "コントレイル"
+    "father": "コントレイル",
+    "motherCh": "相速度",
+    "motherEn": "Phase Velocity"
   },
   {
     "horseId": "2024102272",
@@ -34332,7 +34392,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "サートゥルナーリア"
+    "father": "サートゥルナーリア",
+    "motherCh": "觅奇魔力",
+    "motherEn": "Mikki Charm"
   },
   {
     "horseId": "2024102290",
@@ -34497,7 +34559,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "ドレフォン"
+    "father": "ドレフォン",
+    "motherCh": "名将菖蒲",
+    "motherEn": "Meisho Shobu"
   },
   {
     "horseId": "2024102301",
@@ -34512,7 +34576,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "モーリス"
+    "father": "モーリス",
+    "motherCh": "名将月夜",
+    "motherEn": "Meisho Tachimachi"
   },
   {
     "horseId": "2024102302",
@@ -34602,7 +34668,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "レイデオロ"
+    "father": "レイデオロ",
+    "motherCh": "名将金欢",
+    "motherEn": "Meisho Mimoss"
   },
   {
     "horseId": "2024102308",
@@ -37392,7 +37460,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "ジャスタウェイ"
+    "father": "ジャスタウェイ",
+    "motherCh": "荣进女神",
+    "motherEn": "A Shin Virgo"
   },
   {
     "horseId": "2024102494",
@@ -37827,7 +37897,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "オルフェーヴル"
+    "father": "オルフェーヴル",
+    "motherCh": "非许可",
+    "motherEn": "Nonlicense"
   },
   {
     "horseId": "2024102523",
@@ -37992,7 +38064,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "マテラスカイ"
+    "father": "マテラスカイ",
+    "motherCh": "爱丽舞步",
+    "motherEn": "Agnes Waltz"
   },
   {
     "horseId": "2024102534",
@@ -40032,7 +40106,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "サリオス"
+    "father": "サリオス",
+    "motherCh": "邮票餐厅",
+    "motherEn": "Le Timbre"
   },
   {
     "horseId": "2024102670",
@@ -41337,7 +41413,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "ルーラーシップ"
+    "father": "ルーラーシップ",
+    "motherCh": "云呢拿冰",
+    "motherEn": "Vanilla Ice"
   },
   {
     "horseId": "2024102757",
@@ -45837,7 +45915,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "ベンバトル"
+    "father": "ベンバトル",
+    "motherCh": "满谢意",
+    "motherEn": "Win Kiitos"
   },
   {
     "horseId": "2024103057",
@@ -46422,7 +46502,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "ドレフォン"
+    "father": "ドレフォン",
+    "motherCh": "雪姬",
+    "motherEn": "Kinsho Yukihime"
   },
   {
     "horseId": "2024103096",
@@ -50412,7 +50494,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "サトノクラウン"
+    "father": "サトノクラウン",
+    "motherCh": "那须强音",
+    "motherEn": "Nasuno Forte"
   },
   {
     "horseId": "2024103362",
@@ -51132,7 +51216,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "モーリス"
+    "father": "モーリス",
+    "motherCh": "波尔卡舞",
+    "motherEn": "Fairy Polka"
   },
   {
     "horseId": "2024103410",
@@ -51312,7 +51398,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "ウィルテイクチャージ"
+    "father": "ウィルテイクチャージ",
+    "motherCh": "欢欣起舞",
+    "motherEn": "Jolly Dance"
   },
   {
     "horseId": "2024103422",
@@ -51372,7 +51460,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "ホークビル"
+    "father": "ホークビル",
+    "motherCh": "精致印刷",
+    "motherEn": "Yamanin Imprime"
   },
   {
     "horseId": "2024103426",
@@ -51567,7 +51657,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "ジャンダルム"
+    "father": "ジャンダルム",
+    "motherCh": "倾城猛火",
+    "motherEn": "Ablaze"
   },
   {
     "horseId": "2024103439",
@@ -51597,7 +51689,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "キズナ"
+    "father": "キズナ",
+    "motherCh": "娇花吐艳",
+    "motherEn": "Iberis"
   },
   {
     "horseId": "2024103441",
@@ -52182,7 +52276,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "キズナ"
+    "father": "キズナ",
+    "motherCh": "黄莺出谷",
+    "motherEn": "Bel Canto"
   },
   {
     "horseId": "2024103480",
@@ -55077,7 +55173,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "ファインニードル"
+    "father": "ファインニードル",
+    "motherCh": "爱情之战",
+    "motherEn": "Love Kampf"
   },
   {
     "horseId": "2024103673",
@@ -61707,7 +61805,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "ブリックスアンドモルタル"
+    "father": "ブリックスアンドモルタル",
+    "motherCh": "高超圣洁",
+    "motherEn": "Halteclere"
   },
   {
     "horseId": "2024104115",
@@ -62682,7 +62782,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "ブリックスアンドモルタル"
+    "father": "ブリックスアンドモルタル",
+    "motherCh": "玛丽莎",
+    "motherEn": "Melissa"
   },
   {
     "horseId": "2024104180",
@@ -64807,11 +64909,11 @@
     "breederName": "グランド牧場",
     "bosyuPrice": null,
     "bosyuUnit": null,
-    "saleName": null,
-    "salePrice": null,
-    "group": 3,
-    "rule": "G3",
-    "reason": "没啥特别的理由，就不是Group1或2",
+    "saleName": "セレクトセール2024",
+    "salePrice": 33000,
+    "group": 1,
+    "rule": "G1-2",
+    "reason": "精选/Mix高价马",
     "father": "コントレイル"
   },
   {
@@ -64947,7 +65049,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "ロードカナロア"
+    "father": "ロードカナロア",
+    "motherCh": "桑巴舞后",
+    "motherEn": "Sambista"
   },
   {
     "horseId": "2024104331",
@@ -66507,7 +66611,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "ロードカナロア"
+    "father": "ロードカナロア",
+    "motherCh": "红线情牵",
+    "motherEn": "Akai Ito"
   },
   {
     "horseId": "2024104435",
@@ -66777,7 +66883,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "コントレイル"
+    "father": "コントレイル",
+    "motherCh": "好加好",
+    "motherEn": "Yoka Yoka"
   },
   {
     "horseId": "2024104453",
@@ -70797,7 +70905,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "エピファネイア"
+    "father": "エピファネイア",
+    "motherCh": "捕鲸之旅",
+    "motherEn": "Whale Capture"
   },
   {
     "horseId": "2024104721",
@@ -70872,7 +70982,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "サートゥルナーリア"
+    "father": "サートゥルナーリア",
+    "motherCh": "觅奇碧蒂",
+    "motherEn": "Mikki Badeelah"
   },
   {
     "horseId": "2024104726",
@@ -71517,7 +71629,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "ロードカナロア"
+    "father": "ロードカナロア",
+    "motherCh": "乐不可支",
+    "motherEn": "Peisha Felicita"
   },
   {
     "horseId": "2024104769",
@@ -73902,7 +74016,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "ロードカナロア"
+    "father": "ロードカナロア",
+    "motherCh": "歌颂诗",
+    "motherEn": "Epos"
   },
   {
     "horseId": "2024104928",
@@ -74442,7 +74558,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "サートゥルナーリア"
+    "father": "サートゥルナーリア",
+    "motherCh": "实搏女王",
+    "motherEn": "Reine Minoru"
   },
   {
     "horseId": "2024104964",
@@ -74547,7 +74665,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "ブリックスアンドモルタル"
+    "father": "ブリックスアンドモルタル",
+    "motherCh": "亚洲之风",
+    "motherEn": "Asian Winds"
   },
   {
     "horseId": "2024104971",
@@ -76182,7 +76302,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "シルバーステート"
+    "father": "シルバーステート",
+    "motherCh": "启爱上品",
+    "motherEn": "Keiai Elegant"
   },
   {
     "horseId": "2024105080",
@@ -76512,7 +76634,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "フィレンツェファイア"
+    "father": "フィレンツェファイア",
+    "motherCh": "蔚蓝天空",
+    "motherEn": "En Ciel Bleu"
   },
   {
     "horseId": "2024105102",
@@ -77277,7 +77401,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "モズアスコット"
+    "father": "モズアスコット",
+    "motherCh": "大奖天使",
+    "motherEn": "Grand Prix Angel"
   },
   {
     "horseId": "2024105153",
@@ -79242,7 +79368,9 @@
     "group": 2,
     "rule": "G2-3",
     "reason": "非北社系牧场高募集价",
-    "father": "エピファネイア"
+    "father": "エピファネイア",
+    "motherCh": "全心为爱",
+    "motherEn": "All For Love"
   },
   {
     "horseId": "2024105284",
@@ -85977,7 +86105,9 @@
     "group": 2,
     "rule": "G2-1",
     "reason": "社台系牧场低价/无募集",
-    "father": "マインドユアビスケッツ"
+    "father": "マインドユアビスケッツ",
+    "motherCh": "杏仁佳酿",
+    "motherEn": "Apricot Fizz"
   },
   {
     "horseId": "2024105733",
@@ -86037,7 +86167,9 @@
     "group": 2,
     "rule": "G2-1",
     "reason": "社台系牧场低价/无募集",
-    "father": "ロードカナロア"
+    "father": "ロードカナロア",
+    "motherCh": "极致宝血",
+    "motherEn": "Ultima Blood"
   },
   {
     "horseId": "2024105737",
@@ -86817,7 +86949,9 @@
     "group": 2,
     "rule": "G2-1",
     "reason": "社台系牧场低价/无募集",
-    "father": "ブリックスアンドモルタル"
+    "father": "ブリックスアンドモルタル",
+    "motherCh": "英女皇塔",
+    "motherEn": "Elizabeth Tower"
   },
   {
     "horseId": "2024105789",
@@ -87192,7 +87326,9 @@
     "group": 2,
     "rule": "G2-1",
     "reason": "社台系牧场低价/无募集",
-    "father": "リーチザクラウン"
+    "father": "リーチザクラウン",
+    "motherCh": "真机伶",
+    "motherEn": "Curren Chan"
   },
   {
     "horseId": "2024105814",
@@ -87207,7 +87343,9 @@
     "group": 2,
     "rule": "G2-1",
     "reason": "社台系牧场低价/无募集",
-    "father": "ブリックスアンドモルタル"
+    "father": "ブリックスアンドモルタル",
+    "motherCh": "机伶金花",
+    "motherEn": "Curren Bouquetd'or"
   },
   {
     "horseId": "2024105815",
@@ -87222,7 +87360,9 @@
     "group": 2,
     "rule": "G2-1",
     "reason": "社台系牧场低价/无募集",
-    "father": "サングレーザー"
+    "father": "サングレーザー",
+    "motherCh": "机伶梦",
+    "motherEn": "Curren Moe"
   },
   {
     "horseId": "2024105816",
@@ -87372,7 +87512,9 @@
     "group": 2,
     "rule": "G2-1",
     "reason": "社台系牧场低价/无募集",
-    "father": "ロードカナロア"
+    "father": "ロードカナロア",
+    "motherCh": "皇后宝戒",
+    "motherEn": "Queen's Ring"
   },
   {
     "horseId": "2024105826",
@@ -87792,7 +87934,9 @@
     "group": 2,
     "rule": "G2-1",
     "reason": "社台系牧场低价/无募集",
-    "father": "モーリス"
+    "father": "モーリス",
+    "motherCh": "豪华午宴",
+    "motherEn": "Gorgeous Lunch"
   },
   {
     "horseId": "2024105854",
@@ -87822,7 +87966,9 @@
     "group": 2,
     "rule": "G2-1",
     "reason": "社台系牧场低价/无募集",
-    "father": "サートゥルナーリア"
+    "father": "サートゥルナーリア",
+    "motherCh": "辉姬美韵",
+    "motherEn": "Sound Chiara"
   },
   {
     "horseId": "2024105856",
@@ -87837,7 +87983,9 @@
     "group": 2,
     "rule": "G2-1",
     "reason": "社台系牧场低价/无募集",
-    "father": "コントレイル"
+    "father": "コントレイル",
+    "motherCh": "静音",
+    "motherEn": "Sound Barrier"
   },
   {
     "horseId": "2024105857",
@@ -88047,7 +88195,9 @@
     "group": 2,
     "rule": "G2-1",
     "reason": "社台系牧场低价/无募集",
-    "father": "マインドユアビスケッツ"
+    "father": "マインドユアビスケッツ",
+    "motherCh": "法国酒城",
+    "motherEn": "Saint Emilion"
   },
   {
     "horseId": "2024105871",
@@ -88107,7 +88257,9 @@
     "group": 1,
     "rule": "G1-5",
     "reason": "社台牧场高募集价",
-    "father": "エフフォーリア"
+    "father": "エフフォーリア",
+    "motherCh": "玉容光耀",
+    "motherEn": "Schon Glanz"
   },
   {
     "horseId": "2024105875",
@@ -88287,7 +88439,9 @@
     "group": 2,
     "rule": "G2-1",
     "reason": "社台系牧场低价/无募集",
-    "father": "ブリックスアンドモルタル"
+    "father": "ブリックスアンドモルタル",
+    "motherCh": "为你献唱",
+    "motherEn": "Sing For You"
   },
   {
     "horseId": "2024105887",
@@ -88872,7 +89026,9 @@
     "group": 1,
     "rule": "G1-5",
     "reason": "社台牧场高募集价",
-    "father": "キタサンブラック"
+    "father": "キタサンブラック",
+    "motherCh": "触动心弦",
+    "motherEn": "Soul Stirring"
   },
   {
     "horseId": "2024105926",
@@ -88992,7 +89148,9 @@
     "group": 2,
     "rule": "G2-1",
     "reason": "社台系牧场低价/无募集",
-    "father": "デクラレーションオブウォー"
+    "father": "デクラレーションオブウォー",
+    "motherCh": "大和星耀",
+    "motherEn": "Daiwa Etoile"
   },
   {
     "horseId": "2024105934",
@@ -89742,7 +89900,9 @@
     "group": 2,
     "rule": "G2-1",
     "reason": "社台系牧场低价/无募集",
-    "father": "ブリックスアンドモルタル"
+    "father": "ブリックスアンドモルタル",
+    "motherCh": "矢志夺标",
+    "motherEn": "No One"
   },
   {
     "horseId": "2024105984",
@@ -90102,7 +90262,9 @@
     "group": 2,
     "rule": "G2-1",
     "reason": "社台系牧场低价/无募集",
-    "father": "ブリックスアンドモルタル"
+    "father": "ブリックスアンドモルタル",
+    "motherCh": "永恒印记",
+    "motherEn": "Forever Mark"
   },
   {
     "horseId": "2024106008",
@@ -90522,7 +90684,9 @@
     "group": 2,
     "rule": "G2-1",
     "reason": "社台系牧场低价/无募集",
-    "father": "ドレフォン"
+    "father": "ドレフォン",
+    "motherCh": "至大光城",
+    "motherEn": "Maximum de Paris"
   },
   {
     "horseId": "2024106036",
@@ -90672,7 +90836,9 @@
     "group": 2,
     "rule": "G2-1",
     "reason": "社台系牧场低价/无募集",
-    "father": "マインドユアビスケッツ"
+    "father": "マインドユアビスケッツ",
+    "motherCh": "奇迹传说",
+    "motherEn": "Miracle Legend"
   },
   {
     "horseId": "2024106046",
@@ -91047,7 +91213,9 @@
     "group": 2,
     "rule": "G2-1",
     "reason": "社台系牧场低价/无募集",
-    "father": "ルーラーシップ"
+    "father": "ルーラーシップ",
+    "motherCh": "花径走走",
+    "motherEn": "Rambling Alley"
   },
   {
     "horseId": "2024106071",
@@ -91302,7 +91470,9 @@
     "group": 2,
     "rule": "G2-1",
     "reason": "社台系牧场低价/无募集",
-    "father": "キタサンブラック"
+    "father": "キタサンブラック",
+    "motherCh": "赤风女侠",
+    "motherEn": "Red Anemos"
   },
   {
     "horseId": "2024106088",
@@ -91317,7 +91487,9 @@
     "group": 1,
     "rule": "G1-2",
     "reason": "精选/Mix高价马",
-    "father": "スワーヴリチャード"
+    "father": "スワーヴリチャード",
+    "motherCh": "圆弧赤骏",
+    "motherEn": "Red Oval"
   },
   {
     "horseId": "2024106089",
@@ -91392,7 +91564,9 @@
     "group": 2,
     "rule": "G2-1",
     "reason": "社台系牧场低价/无募集",
-    "father": "ドレフォン"
+    "father": "ドレフォン",
+    "motherCh": "梦幻舞台",
+    "motherEn": "Red Reveur"
   },
   {
     "horseId": "2024106094",
@@ -91692,7 +91866,9 @@
     "group": 1,
     "rule": "G1-1",
     "reason": "北方牧场产出",
-    "father": "シルバーステート"
+    "father": "シルバーステート",
+    "motherCh": "有志竟成",
+    "motherEn": "A Will a Way"
   },
   {
     "horseId": "2024106114",
@@ -91722,7 +91898,9 @@
     "group": 1,
     "rule": "G1-1",
     "reason": "北方牧场产出",
-    "father": "キズナ"
+    "father": "キズナ",
+    "motherCh": "太空陨石",
+    "motherEn": "Aerolithe"
   },
   {
     "horseId": "2024106116",
@@ -91737,7 +91915,9 @@
     "group": 1,
     "rule": "G1-1",
     "reason": "北方牧场产出",
-    "father": "ブリックスアンドモルタル"
+    "father": "ブリックスアンドモルタル",
+    "motherCh": "赤鸟之女",
+    "motherEn": "Akaitorino Musume"
   },
   {
     "horseId": "2024106117",
@@ -92067,7 +92247,9 @@
     "group": 1,
     "rule": "G1-1",
     "reason": "北方牧场产出",
-    "father": "レイデオロ"
+    "father": "レイデオロ",
+    "motherCh": "领衔女角",
+    "motherEn": "Admire Lead"
   },
   {
     "horseId": "2024106139",
@@ -92097,7 +92279,9 @@
     "group": 1,
     "rule": "G1-1",
     "reason": "北方牧场产出",
-    "father": "ブリックスアンドモルタル"
+    "father": "ブリックスアンドモルタル",
+    "motherCh": "活跃生命",
+    "motherEn": "Animate Bio"
   },
   {
     "horseId": "2024106141",
@@ -92127,7 +92311,9 @@
     "group": 1,
     "rule": "G1-1",
     "reason": "北方牧场产出",
-    "father": "マカヒキ"
+    "father": "マカヒキ",
+    "motherCh": "夏威夷鸟",
+    "motherEn": "Apapane"
   },
   {
     "horseId": "2024106143",
@@ -92457,7 +92643,9 @@
     "group": 1,
     "rule": "G1-1",
     "reason": "北方牧场产出",
-    "father": "キタサンブラック"
+    "father": "キタサンブラック",
+    "motherCh": "杏目",
+    "motherEn": "Almond Eye"
   },
   {
     "horseId": "2024106165",
@@ -92742,7 +92930,9 @@
     "group": 1,
     "rule": "G1-1",
     "reason": "北方牧场产出",
-    "father": "キタサンブラック"
+    "father": "キタサンブラック",
+    "motherCh": "胜券天女",
+    "motherEn": "Victoria"
   },
   {
     "horseId": "2024106184",
@@ -92877,7 +93067,9 @@
     "group": 1,
     "rule": "G1-1",
     "reason": "北方牧场产出",
-    "father": "コントレイル"
+    "father": "コントレイル",
+    "motherCh": "守护星",
+    "motherEn": "Uranus Charm"
   },
   {
     "horseId": "2024106193",
@@ -92892,7 +93084,9 @@
     "group": 1,
     "rule": "G1-1",
     "reason": "北方牧场产出",
-    "father": "サートゥルナーリア"
+    "father": "サートゥルナーリア",
+    "motherCh": "檀岛沙锤",
+    "motherEn": "Uliuli"
   },
   {
     "horseId": "2024106194",
@@ -93012,7 +93206,9 @@
     "group": 1,
     "rule": "G1-1",
     "reason": "北方牧场产出",
-    "father": "エピファネイア"
+    "father": "エピファネイア",
+    "motherCh": "强击",
+    "motherEn": "Vivlos"
   },
   {
     "horseId": "2024106202",
@@ -93387,7 +93583,9 @@
     "group": 1,
     "rule": "G1-1",
     "reason": "北方牧场产出",
-    "father": "エフフォーリア"
+    "father": "エフフォーリア",
+    "motherCh": "辛辣风味",
+    "motherEn": "Epice Arome"
   },
   {
     "horseId": "2024106227",
@@ -94107,7 +94305,9 @@
     "group": 1,
     "rule": "G1-1",
     "reason": "北方牧场产出",
-    "father": "クリソベリル"
+    "father": "クリソベリル",
+    "motherCh": "镀金镜",
+    "motherEn": "Gilded Mirror"
   },
   {
     "horseId": "2024106275",
@@ -94377,7 +94577,9 @@
     "group": 1,
     "rule": "G1-1",
     "reason": "北方牧场产出",
-    "father": "サートゥルナーリア"
+    "father": "サートゥルナーリア",
+    "motherCh": "创世驹",
+    "motherEn": "Chrono Genesis"
   },
   {
     "horseId": "2024106293",
@@ -94452,7 +94654,9 @@
     "group": 1,
     "rule": "G1-1",
     "reason": "北方牧场产出",
-    "father": "モーリス"
+    "father": "モーリス",
+    "motherCh": "放声欢呼",
+    "motherEn": "Gran Alegria"
   },
   {
     "horseId": "2024106298",
@@ -94662,7 +94866,9 @@
     "group": 1,
     "rule": "G1-1",
     "reason": "北方牧场产出",
-    "father": "レイデオロ"
+    "father": "レイデオロ",
+    "motherCh": "里约山峰",
+    "motherEn": "Corcovado"
   },
   {
     "horseId": "2024106312",
@@ -94902,7 +95108,9 @@
     "group": 1,
     "rule": "G1-1",
     "reason": "北方牧场产出",
-    "father": "サトノクラウン"
+    "father": "サトノクラウン",
+    "motherCh": "里见女尊",
+    "motherEn": "Satono Reinas"
   },
   {
     "horseId": "2024106328",
@@ -94947,7 +95155,9 @@
     "group": 1,
     "rule": "G1-1",
     "reason": "北方牧场产出",
-    "father": "サートゥルナーリア"
+    "father": "サートゥルナーリア",
+    "motherCh": "大海之女",
+    "motherEn": "Salacia"
   },
   {
     "horseId": "2024106331",
@@ -95022,7 +95232,9 @@
     "group": 1,
     "rule": "G1-1",
     "reason": "北方牧场产出",
-    "father": "サートゥルナーリア"
+    "father": "サートゥルナーリア",
+    "motherCh": "圣域",
+    "motherEn": "Sanctuaire"
   },
   {
     "horseId": "2024106336",
@@ -95217,7 +95429,9 @@
     "group": 1,
     "rule": "G1-1",
     "reason": "北方牧场产出",
-    "father": "アルクトス"
+    "father": "アルクトス",
+    "motherCh": "红晖熠熠",
+    "motherEn": "Shine Garnet"
   },
   {
     "horseId": "2024106349",
@@ -95232,7 +95446,9 @@
     "group": 1,
     "rule": "G1-1",
     "reason": "北方牧场产出",
-    "father": "キタサンブラック"
+    "father": "キタサンブラック",
+    "motherCh": "白色城堡",
+    "motherEn": "Chateau Blanche"
   },
   {
     "horseId": "2024106350",
@@ -95247,7 +95463,9 @@
     "group": 1,
     "rule": "G1-1",
     "reason": "北方牧场产出",
-    "father": "ナダル"
+    "father": "ナダル",
+    "motherCh": "影子歌姬",
+    "motherEn": "Shadow Diva"
   },
   {
     "horseId": "2024106351",
@@ -95382,7 +95600,9 @@
     "group": 1,
     "rule": "G1-1",
     "reason": "北方牧场产出",
-    "father": "サトノクラウン"
+    "father": "サトノクラウン",
+    "motherCh": "珍贵礼物",
+    "motherEn": "Supreme Gift"
   },
   {
     "horseId": "2024106360",
@@ -95487,7 +95707,9 @@
     "group": 1,
     "rule": "G1-1",
     "reason": "北方牧场产出",
-    "father": "サートゥルナーリア"
+    "father": "サートゥルナーリア",
+    "motherCh": "锡兰宝石",
+    "motherEn": "Sinhalite"
   },
   {
     "horseId": "2024106367",
@@ -95787,7 +96009,9 @@
     "group": 1,
     "rule": "G1-1",
     "reason": "北方牧场产出",
-    "father": "レイデオロ"
+    "father": "レイデオロ",
+    "motherCh": "小型舰",
+    "motherEn": "Jeune Ecole"
   },
   {
     "horseId": "2024106387",
@@ -95817,7 +96041,9 @@
     "group": 1,
     "rule": "G1-1",
     "reason": "北方牧场产出",
-    "father": "ハービンジャー"
+    "father": "ハービンジャー",
+    "motherCh": "狙敌",
+    "motherEn": "Jodie"
   },
   {
     "horseId": "2024106389",
@@ -96192,7 +96418,9 @@
     "group": 1,
     "rule": "G1-1",
     "reason": "北方牧场产出",
-    "father": "モーリス"
+    "father": "モーリス",
+    "motherCh": "醒目层次",
+    "motherEn": "Smart Layer"
   },
   {
     "horseId": "2024106414",
@@ -96537,7 +96765,9 @@
     "group": 1,
     "rule": "G1-1",
     "reason": "北方牧场产出",
-    "father": "ドレフォン"
+    "father": "ドレフォン",
+    "motherCh": "真摰演说",
+    "motherEn": "Touching Speech"
   },
   {
     "horseId": "2024106437",
@@ -96672,7 +96902,9 @@
     "group": 1,
     "rule": "G1-1",
     "reason": "北方牧场产出",
-    "father": "エピファネイア"
+    "father": "エピファネイア",
+    "motherCh": "野田幻想",
+    "motherEn": "Danon Fantasy"
   },
   {
     "horseId": "2024106446",
@@ -96897,7 +97129,9 @@
     "group": 1,
     "rule": "G1-1",
     "reason": "北方牧场产出",
-    "father": "ロードカナロア"
+    "father": "ロードカナロア",
+    "motherCh": "虎斑小猫",
+    "motherEn": "Tigrasha"
   },
   {
     "horseId": "2024106461",
@@ -96987,7 +97221,9 @@
     "group": 1,
     "rule": "G1-1",
     "reason": "北方牧场产出",
-    "father": "Baaeed"
+    "father": "Baaeed",
+    "motherCh": "迪雅卓",
+    "motherEn": "Deirdre"
   },
   {
     "horseId": "2024106467",
@@ -97002,7 +97238,9 @@
     "group": 1,
     "rule": "G1-1",
     "reason": "北方牧场产出",
-    "father": "シルバーステート"
+    "father": "シルバーステート",
+    "motherCh": "民族服装",
+    "motherEn": "Dirndl"
   },
   {
     "horseId": "2024106468",
@@ -97302,7 +97540,9 @@
     "group": 1,
     "rule": "G1-1",
     "reason": "北方牧场产出",
-    "father": "レイデオロ"
+    "father": "レイデオロ",
+    "motherCh": "多瑙河",
+    "motherEn": "Donau Blue"
   },
   {
     "horseId": "2024106488",
@@ -97437,7 +97677,9 @@
     "group": 1,
     "rule": "G1-1+G1-2",
     "reason": "北方牧场产出 | 精选/Mix高价马",
-    "father": "キタサンブラック"
+    "father": "キタサンブラック",
+    "motherCh": "朴素无华",
+    "motherEn": "Normcore"
   },
   {
     "horseId": "2024106497",
@@ -97602,7 +97844,9 @@
     "group": 1,
     "rule": "G1-1",
     "reason": "北方牧场产出",
-    "father": "シルバーステート"
+    "father": "シルバーステート",
+    "motherCh": "实力比试",
+    "motherEn": "Passing Through"
   },
   {
     "horseId": "2024106508",
@@ -97827,7 +98071,9 @@
     "group": 1,
     "rule": "G1-1",
     "reason": "北方牧场产出",
-    "father": "レイデオロ"
+    "father": "レイデオロ",
+    "motherCh": "鹿女侠",
+    "motherEn": "Biche"
   },
   {
     "horseId": "2024106523",
@@ -97962,7 +98208,9 @@
     "group": 1,
     "rule": "G1-1",
     "reason": "北方牧场产出",
-    "father": "レイデオロ"
+    "father": "レイデオロ",
+    "motherCh": "焕发嫣红",
+    "motherEn": "Fine Rouge"
   },
   {
     "horseId": "2024106532",
@@ -98037,7 +98285,9 @@
     "group": 1,
     "rule": "G1-1",
     "reason": "北方牧场产出",
-    "father": "アドマイヤマーズ"
+    "father": "アドマイヤマーズ",
+    "motherCh": "莎剧全集",
+    "motherEn": "First Folio"
   },
   {
     "horseId": "2024106537",
@@ -98322,7 +98572,9 @@
     "group": 1,
     "rule": "G1-1",
     "reason": "北方牧场产出",
-    "father": "ルーラーシップ"
+    "father": "ルーラーシップ",
+    "motherCh": "迷人景致",
+    "motherEn": "Buena Vista"
   },
   {
     "horseId": "2024106556",
@@ -98562,7 +98814,9 @@
     "group": 1,
     "rule": "G1-1",
     "reason": "北方牧场产出",
-    "father": "サートゥルナーリア"
+    "father": "サートゥルナーリア",
+    "motherCh": "大场面",
+    "motherEn": "Primo Scene"
   },
   {
     "horseId": "2024106572",
@@ -98952,7 +99206,9 @@
     "group": 1,
     "rule": "G1-1",
     "reason": "北方牧场产出",
-    "father": "キタサンブラック"
+    "father": "キタサンブラック",
+    "motherCh": "好安宁",
+    "motherEn": "Ho O Peaceful"
   },
   {
     "horseId": "2024106598",
@@ -99267,7 +99523,9 @@
     "group": 1,
     "rule": "G1-1",
     "reason": "北方牧场产出",
-    "father": "モーリス"
+    "father": "モーリス",
+    "motherCh": "胜之石",
+    "motherEn": "Marialite"
   },
   {
     "horseId": "2024106619",
@@ -99537,7 +99795,9 @@
     "group": 1,
     "rule": "G1-1",
     "reason": "北方牧场产出",
-    "father": "サートゥルナーリア"
+    "father": "サートゥルナーリア",
+    "motherCh": "觅奇妃",
+    "motherEn": "Mikki Queen"
   },
   {
     "horseId": "2024106637",
@@ -100002,7 +100262,9 @@
     "group": 1,
     "rule": "G1-1",
     "reason": "北方牧场产出",
-    "father": "レイデオロ"
+    "father": "レイデオロ",
+    "motherCh": "唯独爱你",
+    "motherEn": "Loves Only You"
   },
   {
     "horseId": "2024106668",
@@ -100032,7 +100294,9 @@
     "group": 1,
     "rule": "G1-1",
     "reason": "北方牧场产出",
-    "father": "エピファネイア"
+    "father": "エピファネイア",
+    "motherCh": "命运女神",
+    "motherEn": "Lachesis"
   },
   {
     "horseId": "2024106670",
@@ -100122,7 +100386,9 @@
     "group": 1,
     "rule": "G1-1",
     "reason": "北方牧场产出",
-    "father": "エピファネイア"
+    "father": "エピファネイア",
+    "motherCh": "旺紫丁",
+    "motherEn": "Lucky Lilac"
   },
   {
     "horseId": "2024106676",
@@ -100257,7 +100523,9 @@
     "group": 1,
     "rule": "G1-1",
     "reason": "北方牧场产出",
-    "father": "エピファネイア"
+    "father": "エピファネイア",
+    "motherCh": "丽雅美",
+    "motherEn": "Ria Amelia"
   },
   {
     "horseId": "2024106685",
@@ -100347,7 +100615,9 @@
     "group": 1,
     "rule": "G1-1",
     "reason": "北方牧场产出",
-    "father": "サートゥルナーリア"
+    "father": "サートゥルナーリア",
+    "motherCh": "雍容白荷",
+    "motherEn": "Lys Gracieux"
   },
   {
     "horseId": "2024106691",
@@ -100407,7 +100677,9 @@
     "group": 1,
     "rule": "G1-1",
     "reason": "北方牧场产出",
-    "father": "エピファネイア"
+    "father": "エピファネイア",
+    "motherCh": "米兰机场",
+    "motherEn": "Linate"
   },
   {
     "horseId": "2024106695",
@@ -100737,7 +101009,9 @@
     "group": 1,
     "rule": "G1-1",
     "reason": "北方牧场产出",
-    "father": "エピファネイア"
+    "father": "エピファネイア",
+    "motherCh": "姜味烈酒",
+    "motherEn": "Rouge Buck"
   },
   {
     "horseId": "2024106717",
@@ -100797,7 +101071,9 @@
     "group": 1,
     "rule": "G1-1",
     "reason": "北方牧场产出",
-    "father": "サートゥルナーリア"
+    "father": "サートゥルナーリア",
+    "motherCh": "丽冠花环",
+    "motherEn": "Lei Papale"
   },
   {
     "horseId": "2024106721",
@@ -100842,7 +101118,9 @@
     "group": 1,
     "rule": "G1-1",
     "reason": "北方牧场产出",
-    "father": "モーリス"
+    "father": "モーリス",
+    "motherCh": "拉丁城市",
+    "motherEn": "Resistencia"
   },
   {
     "horseId": "2024106724",
@@ -101007,7 +101285,9 @@
     "group": 1,
     "rule": "G1-1",
     "reason": "北方牧场产出",
-    "father": "オルフェーヴル"
+    "father": "オルフェーヴル",
+    "motherCh": "叱咤一时",
+    "motherEn": "Red Regnant"
   },
   {
     "horseId": "2024106735",
@@ -101262,7 +101542,9 @@
     "group": 1,
     "rule": "G1-1",
     "reason": "北方牧场产出",
-    "father": "シルバーステート"
+    "father": "シルバーステート",
+    "motherCh": "粉叶蔷薇",
+    "motherEn": "Rosa Glauca"
   },
   {
     "horseId": "2024106752",
@@ -101382,7 +101664,9 @@
     "group": 1,
     "rule": "G1-1",
     "reason": "北方牧场产出",
-    "father": "オルフェーヴル"
+    "father": "オルフェーヴル",
+    "motherCh": "织纱长袍",
+    "motherEn": "Robe Tissage"
   },
   {
     "horseId": "2024106760",
@@ -101412,7 +101696,9 @@
     "group": 1,
     "rule": "G1-1",
     "reason": "北方牧场产出",
-    "father": "ブリックスアンドモルタル"
+    "father": "ブリックスアンドモルタル",
+    "motherCh": "野莓",
+    "motherEn": "Wild Raspberry"
   },
   {
     "horseId": "2024106762",
@@ -102747,7 +103033,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "ハイランドリール"
+    "father": "ハイランドリール",
+    "motherCh": "东瀛降福",
+    "motherEn": "Tosen Bless"
   },
   {
     "horseId": "2024106851",
@@ -104022,7 +104310,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "ブリックスアンドモルタル"
+    "father": "ブリックスアンドモルタル",
+    "motherCh": "歌尔达",
+    "motherEn": "Little Gerda"
   },
   {
     "horseId": "2024106936",
@@ -104232,7 +104522,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "ドレフォン"
+    "father": "ドレフォン",
+    "motherCh": "恋恋蔷薇",
+    "motherEn": "Rose Amour"
   },
   {
     "horseId": "2024106950",
@@ -104727,7 +105019,9 @@
     "group": 2,
     "rule": "G2-1",
     "reason": "社台系牧场低价/无募集",
-    "father": "シスキン"
+    "father": "シスキン",
+    "motherCh": "雅乐升华",
+    "motherEn": "Elevatezza"
   },
   {
     "horseId": "2024106983",
@@ -104817,7 +105111,9 @@
     "group": 2,
     "rule": "G2-1",
     "reason": "社台系牧场低价/无募集",
-    "father": "シスキン"
+    "father": "シスキン",
+    "motherCh": "亲吻",
+    "motherEn": "Galocher"
   },
   {
     "horseId": "2024106989",
@@ -105132,7 +105428,9 @@
     "group": 2,
     "rule": "G2-1",
     "reason": "社台系牧场低价/无募集",
-    "father": "エピファネイア"
+    "father": "エピファネイア",
+    "motherCh": "湘南魔瓶",
+    "motherEn": "Shonan Pandora"
   },
   {
     "horseId": "2024107010",
@@ -105192,7 +105490,9 @@
     "group": 2,
     "rule": "G2-1",
     "reason": "社台系牧场低价/无募集",
-    "father": "エピファネイア"
+    "father": "エピファネイア",
+    "motherCh": "子夜白光",
+    "motherEn": "Jour Polaire"
   },
   {
     "horseId": "2024107014",
@@ -105312,7 +105612,9 @@
     "group": 2,
     "rule": "G2-1",
     "reason": "社台系牧场低价/无募集",
-    "father": "マインドユアビスケッツ"
+    "father": "マインドユアビスケッツ",
+    "motherCh": "挪威少艾",
+    "motherEn": "Solveig"
   },
   {
     "horseId": "2024107022",
@@ -105972,7 +106274,9 @@
     "group": 2,
     "rule": "G2-1",
     "reason": "社台系牧场低价/无募集",
-    "father": "ドレフォン"
+    "father": "ドレフォン",
+    "motherCh": "女主唱",
+    "motherEn": "Last Prima Donna"
   },
   {
     "horseId": "2024107066",
@@ -106032,7 +106336,9 @@
     "group": 2,
     "rule": "G2-1",
     "reason": "社台系牧场低价/无募集",
-    "father": "イスラボニータ"
+    "father": "イスラボニータ",
+    "motherCh": "寓言",
+    "motherEn": "Le Conte Bleu"
   },
   {
     "horseId": "2024107070",
@@ -107802,7 +108108,9 @@
     "group": 2,
     "rule": "G2-1",
     "reason": "社台系牧场低价/无募集",
-    "father": "ブリックスアンドモルタル"
+    "father": "ブリックスアンドモルタル",
+    "motherCh": "新纪录",
+    "motherEn": "Nuovo Record"
   },
   {
     "horseId": "2024107188",
@@ -107967,7 +108275,9 @@
     "group": 1,
     "rule": "G1-1",
     "reason": "北方牧场产出",
-    "father": "モーリス"
+    "father": "モーリス",
+    "motherCh": "仙女恩典",
+    "motherEn": "Dea Regalo"
   },
   {
     "horseId": "2024107199",
@@ -109812,7 +110122,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "ロードカナロア"
+    "father": "ロードカナロア",
+    "motherCh": "粉红巨钻",
+    "motherEn": "Shigeru Pink Dia"
   },
   {
     "horseId": "2024107322",
@@ -114417,7 +114729,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "Flightline"
+    "father": "Flightline",
+    "motherCh": "豹侠女",
+    "motherEn": "Miss Panthere"
   },
   {
     "horseId": "2024108202",
@@ -114537,7 +114851,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "Frankel"
+    "father": "Frankel",
+    "motherCh": "金鞭",
+    "motherEn": "Cravache d'Or"
   },
   {
     "horseId": "2024108210",
@@ -114612,7 +114928,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "Into Mischief"
+    "father": "Into Mischief",
+    "motherCh": "橙红色",
+    "motherEn": "Scarlet Color"
   },
   {
     "horseId": "2024108215",
@@ -115377,7 +115695,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "Baaeed"
+    "father": "Baaeed",
+    "motherCh": "由衷信任",
+    "motherEn": "Fiducia"
   },
   {
     "horseId": "2024108266",
@@ -115392,7 +115712,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "Frankel"
+    "father": "Frankel",
+    "motherCh": "圣名誓约",
+    "motherEn": "Elisheva"
   },
   {
     "horseId": "2024108267",
@@ -115917,7 +116239,9 @@
     "group": 3,
     "rule": "G3",
     "reason": "没啥特别的理由，就不是Group1或2",
-    "father": "ジャスタウェイ"
+    "father": "ジャスタウェイ",
+    "motherCh": "哥连宝莉",
+    "motherEn": "Corin Berry"
   },
   {
     "horseId": "2024108302",
