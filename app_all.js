@@ -161,11 +161,11 @@ function queryMother() {
   const motherCount = motherSet.size;
   let memeHtml = '';
 
-  // 先判断是否是骆驼精选马，如果是则强制显示骆驼图片
+  // 先判断是否是精选马，如果是则强制显示骆驼图片
   let imageName = null;
   if (motherCount === 1) {
     const recommendType = getRecommendType(matches[0].mother);
-    if (recommendType === '骆驼精选') {
+    if (recommendType === '骆驼精选' || recommendType === '工口作家精选' || recommendType === '花亲王精选' || recommendType === '御医精选' || recommendType === '🦌老师精选') {
       imageName = getRandomImageForRule('骆驼');
     }
   }

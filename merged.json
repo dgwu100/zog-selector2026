@@ -88254,9 +88254,9 @@
     "bosyuUnit": 2000,
     "saleName": "セレクトセール2025",
     "salePrice": 8580,
-    "group": 1,
-    "rule": "G1-5",
-    "reason": "社台牧场高募集价",
+    "group": 2,
+    "rule": "G2-2",
+    "reason": "拍卖中等价位",
     "father": "エフフォーリア",
     "motherCh": "玉容光耀",
     "motherEn": "Schon Glanz"
@@ -91698,9 +91698,9 @@
     "bosyuUnit": 2000,
     "saleName": "セレクトセール2025",
     "salePrice": 8580,
-    "group": 1,
-    "rule": "G1-5",
-    "reason": "社台牧场高募集价",
+    "group": 2,
+    "rule": "G2-2",
+    "reason": "拍卖中等价位",
     "father": "キズナ"
   },
   {
