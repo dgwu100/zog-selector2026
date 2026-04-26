@@ -1065,14 +1065,13 @@ function validateSelections() {
   // 计算种费<500万的G1数量（用于特殊规则检查）
   const lowFeeG1Count = selectedHorses.filter(h => h.group === 1 && isLowFeeHorse(h)).length;
 
-  // 计算可扩展次数（先检查特殊规则2是否触发）
-  let maxExtensions = 0;
+  // 先检查特殊规则1：同父限制扩展（基于放弃G1数量）
+  let maxExtensions = Math.max(0, 5 - g1Count); // 放弃G1数量 = 可扩展次数
+  
+  // 检查特殊规则2：种费500万以下名额扩展（在特殊规则1基础上）
   if (lowFeeG1Count >= 2) {
-    // 触发特殊规则2：可扩展次数 = 种费<500万G1 - 2
-    maxExtensions = lowFeeG1Count - 2;
-  } else {
-    // 未触发特殊规则2：可扩展次数 = 5 - g1Count
-    maxExtensions = Math.max(0, 5 - g1Count);
+    // 触发特殊规则2：可扩展次数 = 特殊规则1的扩展 + (种费<500万G1 - 2)
+    maxExtensions = maxExtensions + (lowFeeG1Count - 2);
   }
 
   // 规则3：同父限制（根据可扩展次数验证）
