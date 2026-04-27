@@ -941,34 +941,60 @@ function initDragSort() {
 
       if (Math.abs(diff) > 30 && !isTouchDragging) {
         isTouchDragging = true;
-        item.classList.add('dragging');
       }
 
       if (isTouchDragging) {
         e.preventDefault();
-        item.style.transform = `translateY(${diff}px)`;
+        
+        // 更新被拖动项目的视觉反馈
+        draggedElement.style.transform = `translateY(${diff}px)`;
+        draggedElement.classList.add('touch-dragging');
+        
+        // 清除之前的插入指示器
+        items.forEach(i => {
+          i.classList.remove('insert-before', 'insert-after');
+        });
+        
+        // 计算当前触摸位置在哪个项目上方
+        const allItems = Array.from(document.querySelectorAll('.selection-item'));
+        for (let i = 0; i < allItems.length; i++) {
+          const rect = allItems[i].getBoundingClientRect();
+          const itemMiddle = rect.top + rect.height / 2;
+          
+          // 跳过自己
+          if (allItems[i] === draggedElement) continue;
+          
+          // 判断插入位置
+          if (touchY < itemMiddle) {
+            allItems[i].classList.add('insert-before');
+            break;
+          } else if (i === allItems.length - 1 || touchY < allItems[i + 1].getBoundingClientRect().top + allItems[i + 1].offsetHeight / 2) {
+            allItems[i].classList.add('insert-after');
+            break;
+          }
+        }
       }
     }, { passive: false });
 
     // 移动端 touchend
-    item.addEventListener('touchend', () => {
+    item.addEventListener('touchend', (e) => {
       if (!draggedElement) return;
 
       if (isTouchDragging && draggedIndex !== null) {
+        // 找到插入指示器的位置
         const allItems = Array.from(document.querySelectorAll('.selection-item'));
-        const draggedRect = draggedElement.getBoundingClientRect();
-        const draggedCenterY = draggedRect.top + draggedRect.height / 2;
-
-        let targetIdx = 0;
+        let targetIdx = draggedIndex;
+        
         for (let i = 0; i < allItems.length; i++) {
-          if (allItems[i] === draggedElement) continue;
-          const rect = allItems[i].getBoundingClientRect();
-          if (draggedCenterY > rect.top + rect.height / 2) {
+          if (allItems[i].classList.contains('insert-before')) {
+            targetIdx = i;
+            break;
+          } else if (allItems[i].classList.contains('insert-after')) {
             targetIdx = i + 1;
+            if (targetIdx > draggedIndex) targetIdx--;
+            break;
           }
         }
-
-        if (draggedIndex < targetIdx) targetIdx--;
 
         if (draggedIndex !== targetIdx) {
           const [moved] = selectedHorses.splice(draggedIndex, 1);
@@ -978,8 +1004,15 @@ function initDragSort() {
         }
       }
 
-      items.forEach(i => i.classList.remove('dragging'));
-      item.style.transform = '';
+      // 清除所有视觉反馈
+      items.forEach(i => {
+        i.classList.remove('dragging', 'touch-dragging', 'insert-before', 'insert-after');
+        i.style.transform = '';
+      });
+      if (draggedElement) {
+        draggedElement.classList.remove('touch-dragging');
+        draggedElement.style.transform = '';
+      }
       draggedIndex = null;
       isTouchDragging = false;
       draggedElement = null;
@@ -993,7 +1026,9 @@ function initDragSort() {
       touchStartY = e.touches[0].clientY;
       draggedElement = item;
       draggedIndex = parseInt(item.dataset.index);
-    }, { passive: true });
+      // 添加视觉反馈 - 标记为触摸拖动状态
+      item.classList.add('touch-dragging');
+    }, { passive: false });  // 改为非passive以便后续preventDefault
   });
 }
 
