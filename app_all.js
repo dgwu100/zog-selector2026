@@ -1086,9 +1086,9 @@ function validateSelections() {
   const isValidSexRatio = validSexRatios.some(([m, f]) => m === maleCount && f === femaleCount);
   if (!isValidSexRatio) {
     if (maleCount > femaleCount) {
-      errors.push('🚹太多牡啦，来点牝吧');
+      errors.push('⚡️看来你是男生宿舍管理员');
     } else {
-      errors.push('🚺太多牝啦，来点牡吧');
+      errors.push('🚨你也想当女生宿舍管理员吗');
     }
   }
 
@@ -1100,43 +1100,48 @@ function validateSelections() {
   // 计算种费<500万的G1数量（用于特殊规则检查）
   const lowFeeG1Count = selectedHorses.filter(h => h.group === 1 && isLowFeeHorse(h)).length;
 
-  // 先检查特殊规则1：同父限制扩展（基于放弃G1数量）
-  let maxExtensions = Math.max(0, 5 - g1Count); // 放弃G1数量 = 可扩展次数
-  
-  // 检查特殊规则2：种费500万以下名额扩展（在特殊规则1基础上）
-  if (lowFeeG1Count >= 2) {
-    // 触发特殊规则2：可扩展次数 = 特殊规则1的扩展 + (种费<500万G1 - 2)
-    maxExtensions = maxExtensions + (lowFeeG1Count - 2);
-  }
-
-  // 规则3：同父限制（根据可扩展次数验证）
+  // 特殊规则1：同父限制扩展（通过检测同父超标数量来触发）
+  // 用户通过超标行为"质押"G1上限，这个限制不可逆
   const fatherCounts = {};
   selectedHorses.forEach(h => {
     fatherCounts[h.father] = (fatherCounts[h.father] || 0) + 1;
   });
 
+  // 计算需要放弃多少G1上限（每超标1条同父马，G1上限-1）
   const overLimitFathers = Object.entries(fatherCounts)
     .filter(([, count]) => count > 2)
     .map(([father, count]) => ({ father, count, needed: count - 2 }));
 
   const neededExtensions = overLimitFathers.reduce((sum, f) => sum + f.needed, 0);
+  const rule1Penalty = Math.min(neededExtensions, 2); // 特殊规则1最多触发2次
 
-  if (neededExtensions > maxExtensions) {
+  // 特殊规则2：种费500万以下名额扩展
+  // 触发条件：≥2条低种费G1，G1上限+1
+  const rule2Bonus = lowFeeG1Count >= 2 ? 1 : 0;
+
+  // 计算G1上限：基础5条 - 特殊规则1惩罚 + 特殊规则2奖励
+  const maxG1Allowed = 5 - rule1Penalty + rule2Bonus;
+
+  // 验证特殊规则1触发次数
+  if (neededExtensions > 2) {
     overLimitFathers.forEach(({ father }) => {
-      errors.push(`🐎 ${father} 产驹数量超标啦，看看别家的？`);
+      errors.push(`🐎 ${father} 产驹超标太多了，特殊规则1最多触发2次哦`);
     });
   }
 
-  // 规则4：Group数量限制
-  if (g1Count > 5) {
-    errors.push('😧 不是哥们，连吃带拿啊？这么多G1');
+  // 验证G1数量
+  if (g1Count > maxG1Allowed) {
+    if (rule1Penalty > 0) {
+      errors.push('🔨 同种马上限规则只能触发两次啊喂');
+    } else {
+      errors.push('😧 不是哥们，连吃带拿啊？这么多G1');
+    }
   }
-  if (g1Count + g2Count > 7) {
-    errors.push('😰 G1G2高端局太多了，给G3哥们留口汤喝吧');
+  // G2上限（固定为2）
+  if (g2Count > 2) {
+    errors.push('😰 G2是不是太多了');
   }
-  if (g3Count < 3) {
-    errors.push('🌱 G3太少了，要雨露均沾嘛！');
-  }
+  // G3无需检查：总数固定10条，G1和G2合法后G3数量自然确定
 
   // 规则5：供用年数1年目要求
   const hasNewSire = selectedHorses.some(h => {
