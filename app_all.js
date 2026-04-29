@@ -1137,8 +1137,10 @@ function validateSelections() {
       errors.push('😧 不是哥们，连吃带拿啊？这么多G1');
     }
   }
-  // G2上限（固定为2）
-  if (g2Count > 2) {
+  // G2上限：基础2条 + 未使用的G1名额
+  const g1Shortage = Math.max(0, maxG1Allowed - g1Count);
+  const maxG2Allowed = 2 + g1Shortage;
+  if (g2Count > maxG2Allowed) {
     errors.push('😰 G2是不是太多了');
   }
   // G3无需检查：总数固定10条，G1和G2合法后G3数量自然确定

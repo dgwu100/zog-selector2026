@@ -7,9 +7,9 @@
   --silver-color: #c0c0c0;
   --bronze-color: #cd7f32;
   
-  --g1-bg: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  --g2-bg: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-  --g3-bg: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  --g1-bg: linear-gradient(135deg, #f7971e 0%, #ffd200 100%);
+  --g2-bg: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+  --g3-bg: linear-gradient(135deg, #ff416c 0%, #ff4b2b 100%);
   
   --text-primary: #ffffff;
   --text-secondary: #a0a0a0;
@@ -880,18 +880,62 @@ body {
   .selection-item {
     flex-wrap: wrap;
     gap: 8px;
+    align-items: flex-start;
   }
 
   .selection-info {
-    width: calc(100% - 60px);
+    width: 100%; /* 让info区域占满整行，便于下方元素换行 */
+    min-width: 0;
+  }
+
+  .selection-mother {
+    font-size: 0.95rem;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+
+  /* 标签在移动端允许换行 */
+  .horse-tag {
+    white-space: normal;
+    font-size: 0.7rem;
+    padding: 3px 6px;
+  }
+
+  /* Group徽章在移动端减小 */
+  .selection-group {
+    font-size: 0.75rem;
+    padding: 3px 8px;
+    white-space: normal;
   }
 
   .mother-info-row {
-    gap: 28px !important;
+    flex-wrap: wrap;
+    gap: 8px !important;
+  }
+
+  .mother-name {
+    width: 100%; /* 马名单独一行 */
+    font-size: 1rem;
+    word-break: break-word;
+  }
+
+  .mother-info-row .horse-tag {
+    white-space: normal;
+    font-size: 0.7rem;
+    padding: 3px 6px;
   }
 
   .mother-result-item {
-    padding: 18px 20px;
+    padding: 15px 12px;
+  }
+
+  .sex-wrapper {
+    min-width: 40px;
+    height: 40px;
+  }
+
+  .sex-icon {
+    font-size: 1.8rem;
   }
 }
 
