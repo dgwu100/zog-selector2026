@@ -875,26 +875,43 @@ body {
     padding: 15px;
   }
 
+  /* 强制所有文字横向展示，防止意外竖排 */
+  .selection-item,
+  .selection-item * {
+    writing-mode: horizontal-tb !important;
+    text-orientation: mixed;
+  }
+
   .selection-item {
     flex-wrap: wrap;
     gap: 8px;
     align-items: flex-start;
+    justify-content: flex-start;
   }
 
   .selection-info {
-    width: 100%; /* 让info区域占满整行，便于下方元素换行 */
+    width: 100%;
     min-width: 0;
   }
 
+  /* 马名允许换行，不使用省略号 */
   .selection-mother {
     font-size: 0.95rem;
     word-break: break-word;
     overflow-wrap: break-word;
+    white-space: normal;
+  }
+
+  /* 其他文字元素也要保证不被压得太窄 */
+  .selection-father,
+  .selection-group,
+  .horse-tag {
+    min-width: fit-content;
+    white-space: normal;
   }
 
   /* 标签在移动端允许换行 */
   .horse-tag {
-    white-space: normal;
     font-size: 0.7rem;
     padding: 3px 6px;
   }
@@ -903,7 +920,18 @@ body {
   .selection-group {
     font-size: 0.75rem;
     padding: 3px 8px;
-    white-space: normal;
+  }
+
+  /* 序号、性别、删除按钮不被压缩 */
+  .selection-index,
+  .selection-sex,
+  .remove-btn {
+    flex-shrink: 0;
+  }
+
+  /* 拖动手柄不被压缩 */
+  .drag-handle {
+    flex-shrink: 0;
   }
 
   .mother-info-row {
