@@ -884,13 +884,19 @@ body {
 
   .selection-item {
     flex-wrap: wrap;
-    gap: 8px;
-    align-items: flex-start;
+    gap: 6px;
+    align-items: center;
     justify-content: flex-start;
   }
 
+  /* 核心内容：拖动手柄 + 序号 + 马名尽量在一行 */
+  .drag-handle,
+  .selection-index {
+    flex-shrink: 0;
+  }
+
   .selection-info {
-    width: 100%;
+    flex: 1 1 auto;
     min-width: 0;
   }
 
@@ -902,36 +908,31 @@ body {
     white-space: normal;
   }
 
-  /* 其他文字元素也要保证不被压得太窄 */
-  .selection-father,
-  .selection-group,
-  .horse-tag {
-    min-width: fit-content;
-    white-space: normal;
+  .selection-father {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    word-break: break-word;
   }
 
-  /* 标签在移动端允许换行 */
+  /* 次要元素：标签、Group、性别、删除按钮 - 空间不够时自动换行 */
+  .selection-group,
+  .selection-sex,
+  .remove-btn,
+  .horse-tag {
+    flex-shrink: 0;
+  }
+
+  /* 标签样式 */
   .horse-tag {
     font-size: 0.7rem;
     padding: 3px 6px;
+    white-space: normal;
   }
 
-  /* Group徽章在移动端减小 */
+  /* Group徽章样式 */
   .selection-group {
     font-size: 0.75rem;
     padding: 3px 8px;
-  }
-
-  /* 序号、性别、删除按钮不被压缩 */
-  .selection-index,
-  .selection-sex,
-  .remove-btn {
-    flex-shrink: 0;
-  }
-
-  /* 拖动手柄不被压缩 */
-  .drag-handle {
-    flex-shrink: 0;
   }
 
   .mother-info-row {
