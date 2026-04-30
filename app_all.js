@@ -91,6 +91,111 @@ const memes = {
   ]
 };
 
+// ==================== 主题管理器 ====================
+const ThemeManager = {
+  THEME_KEY: 'zog2026_theme',
+  DONT_SHOW_KEY: 'zog2026_theme_dont_show',
+
+  init() {
+    // 初始化切换按钮点击事件
+    const toggleBtn = document.getElementById('theme-toggle-btn');
+
+    if (toggleBtn) {
+      toggleBtn.addEventListener('click', () => {
+        const currentTheme = document.documentElement.getAttribute('data-theme') || 'default';
+        const newTheme = currentTheme === 'default' ? 'jbis' : 'default';
+        this.applyTheme(newTheme);
+      });
+    }
+
+    // 检查已保存的主题设置
+    const savedTheme = localStorage.getItem(this.THEME_KEY);
+    const dontShow = localStorage.getItem(this.DONT_SHOW_KEY) === 'true';
+
+    if (savedTheme) {
+      this.applyTheme(savedTheme);
+      this.hideThemeModal();
+    } else if (dontShow) {
+      // 如果勾选了不再提示，应用默认主题并隐藏弹窗
+      this.applyTheme('default');
+      this.hideThemeModal();
+    } else {
+      // 首次访问，显示主题选择弹窗
+      this.showThemeModal();
+    }
+
+    this.updateToggleUI();
+  },
+
+  applyTheme(theme) {
+    if (theme === 'default') {
+      document.documentElement.removeAttribute('data-theme');
+    } else {
+      document.documentElement.setAttribute('data-theme', theme);
+    }
+    localStorage.setItem(this.THEME_KEY, theme);
+    this.updateToggleUI();
+  },
+
+  showThemeModal() {
+    const modal = document.getElementById('theme-modal');
+    if (modal) {
+      modal.classList.add('show');
+      this.bindThemeOptions();
+    }
+  },
+
+  hideThemeModal() {
+    const modal = document.getElementById('theme-modal');
+    if (modal) {
+      modal.classList.remove('show');
+    }
+  },
+
+  bindThemeOptions() {
+    const options = document.querySelectorAll('.theme-option');
+    const dontShowCheckbox = document.getElementById('dont-show-theme');
+
+    options.forEach(option => {
+      option.addEventListener('click', () => {
+        // 移除其他选项的选中状态
+        options.forEach(o => o.classList.remove('selected'));
+        option.classList.add('selected');
+
+        const theme = option.dataset.theme;
+        const dontShow = dontShowCheckbox && dontShowCheckbox.checked;
+
+        // 应用主题
+        this.applyTheme(theme);
+
+        // 如果勾选了不再提示，保存设置
+        if (dontShow) {
+          localStorage.setItem(this.DONT_SHOW_KEY, 'true');
+        }
+
+        // 延迟隐藏弹窗，让用户看到选择效果
+        setTimeout(() => {
+          this.hideThemeModal();
+        }, 300);
+      });
+    });
+  },
+
+  updateToggleUI() {
+    const currentTheme = document.documentElement.getAttribute('data-theme') || 'default';
+    const otherNameEl = document.getElementById('theme-other-name');
+
+    const themeNames = {
+      'default': '切换JRA/NKB风格',
+      'jbis': '切换JBIS风格'
+    };
+
+    const otherTheme = currentTheme === 'default' ? 'jbis' : 'default';
+
+    if (otherNameEl) otherNameEl.textContent = themeNames[otherTheme];
+  }
+};
+
 // ==================== 初始化 ====================
 // ==================== 数据加载 ====================
 async function loadData() {
@@ -131,6 +236,9 @@ async function loadOverseasSires() {
 
 // ==================== 初始化 ====================
 async function init() {
+  // 初始化主题管理器（优先执行，确保主题在数据加载前就已应用）
+  ThemeManager.init();
+
   // 显示加载状态
   showLoading();
   

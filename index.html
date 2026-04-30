@@ -7,6 +7,11 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- 主题切换 -->
+  <div class="theme-switcher">
+    <button class="theme-toggle-btn" id="theme-toggle-btn"><span id="theme-other-name">JBIS</span></button>
+  </div>
+
   <div class="container">
     <header class="header">
       <h1>ZOG 2026 Group检查器Beta测试版</h1>
@@ -93,6 +98,26 @@
       </div>
       <div class="meme-recommend-label" id="meme-recommend-label"></div>
       <div class="meme-text" id="meme-text"></div>
+    </div>
+  </div>
+
+  <!-- 主题选择弹窗 -->
+  <div class="theme-modal" id="theme-modal">
+    <div class="theme-modal-content">
+      <h2>选择配色主题 / Select Theme</h2>
+      <div class="theme-options">
+        <div class="theme-option" data-theme="default">
+          <span>JRA/NKB风格</span>
+        </div>
+        <div class="theme-option" data-theme="jbis">
+          <span>JBIS风格</span>
+        </div>
+      </div>
+      <div class="dont-show-again">
+        <label>
+          <input type="checkbox" id="dont-show-theme"> 不再提示
+        </label>
+      </div>
     </div>
   </div>
 
