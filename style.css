@@ -925,9 +925,10 @@ body {
 
   /* 标签样式 */
   .horse-tag {
-    font-size: 0.7rem;
+    font-size: 0.7rem !important;
     padding: 3px 6px;
-    white-space: normal;
+    white-space: normal !important;
+    flex-shrink: 0;
   }
 
   /* Group徽章样式 */
