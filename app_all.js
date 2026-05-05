@@ -112,16 +112,26 @@ const ThemeManager = {
     const savedTheme = localStorage.getItem(this.THEME_KEY);
     const dontShow = localStorage.getItem(this.DONT_SHOW_KEY) === 'true';
 
-    if (savedTheme) {
-      this.applyTheme(savedTheme);
-      this.hideThemeModal();
-    } else if (dontShow) {
-      // 如果勾选了不再提示，应用默认主题并隐藏弹窗
-      this.applyTheme('default');
+    if (dontShow) {
+      // 如果勾选了不再提示，应用保存的主题（或默认主题）并隐藏弹窗
+      const themeToApply = savedTheme || 'default';
+      this.applyTheme(themeToApply);
       this.hideThemeModal();
     } else {
-      // 首次访问，显示主题选择弹窗
+      // 否则显示主题选择弹窗
       this.showThemeModal();
+
+      // 如果有保存的主题，预选它
+      if (savedTheme) {
+        const options = document.querySelectorAll('.theme-option');
+        options.forEach(option => {
+          if (option.dataset.theme === savedTheme) {
+            option.classList.add('selected');
+          } else {
+            option.classList.remove('selected');
+          }
+        });
+      }
     }
 
     this.updateToggleUI();
@@ -270,6 +280,7 @@ async function init() {
     clearQueryBtn.addEventListener('click', () => {
       motherInput.value = '';
       queryResult.innerHTML = '';
+      stopFirework();
       motherInput.focus();
     });
   }
@@ -433,7 +444,7 @@ function queryMother() {
           '<div class="mother-info-row">' +
             '<div class="sex-wrapper">' + sexIcon + '</div>' +
             '<div class="mother-info">' +
-              '<span class="mother-name">母马名：' + info.mother + '</span>' +
+              '<div class="mother-name">母马名：' + info.mother + '</div>' +
               fatherText +
             '</div>' +
             tagsHtml +
@@ -896,11 +907,15 @@ function addToSelection(horseId) {
 
 // 从选择列表移除
 function removeFromSelection(horseId) {
-  selectedHorses = selectedHorses.filter(h => h.horseId !== horseId);
-  validationResult.innerHTML = '';
-  saveSelections();
-  renderSelections();
-  showToast('已删除');
+  const horse = selectedHorses.find(h => h.horseId === horseId);
+  const motherName = horse ? horse.mother : '这条';
+  if (confirm(`确定要删除母名为${motherName}的选择吗？`)) {
+    selectedHorses = selectedHorses.filter(h => h.horseId !== horseId);
+    validationResult.innerHTML = '';
+    saveSelections();
+    renderSelections();
+    showToast('已删除');
+  }
 }
 
 // 清空选择列表
@@ -939,23 +954,28 @@ function renderSelections() {
 
     // 性别图标
     const sexIcon = horse.sex === 'male' ? '♂' : horse.sex === 'female' ? '♀' : '';
+    const sexClass = horse.sex === 'male' ? 'male' : horse.sex === 'female' ? 'female' : '';
 
     html += `<div class="selection-item" data-index="${index}">
-      <span class="drag-handle" draggable="true">☰</span>
-      <span class="selection-index">${index + 1}.</span>
-      <span class="selection-info">
-        <span class="selection-mother">母名：${horse.mother}</span>
+      <div class="selection-row1">
+        <span class="drag-handle" draggable="true">☰</span>
+        <span class="selection-index">${index + 1}.</span>
+        <div class="selection-mother">母名：${horse.mother}</div>
+      </div>
+      <div class="selection-row2">
         <span class="selection-father">父名：${horse.father}</span>
-      </span>
-      ${tagsHtml}
-      <span class="selection-group ${groupClass}">G${horse.group}</span>
-      <span class="selection-sex">${sexIcon}</span>
-      <button class="remove-btn" data-horse-id="${horse.horseId}">
-        <svg viewBox="0 0 24 24">
-          <path d="M3 6h18M8 6V4a2 2 0 012-2h4a2 2 0 012 2v2M19 6l-1 14a2 2 0 01-2 2H8a2 2 0 01-2-2L5 6"/>
-          <path d="M10 11v6M14 11v6"/>
-        </svg>
-      </button>
+      </div>
+      <div class="selection-row3">
+        <div class="selection-tags">${tagsHtml}</div>
+        <span class="selection-group ${groupClass}">G${horse.group}</span>
+        <span class="selection-sex ${sexClass}">${sexIcon}</span>
+        <button class="remove-btn" data-horse-id="${horse.horseId}">
+          <svg viewBox="0 0 24 24">
+            <path d="M3 6h18M8 6V4a2 2 0 012-2h4a2 2 0 012 2v2M19 6l-1 14a2 2 0 01-2 2H8a2 2 0 01-2-2L5 6"/>
+            <path d="M10 11v6M14 11v6"/>
+          </svg>
+        </button>
+      </div>
     </div>`;
   });
 

@@ -896,15 +896,47 @@ body {
     flex-shrink: 0;
   }
 
-  .selection-info {
-    flex: 1 1 auto;
+  /* 第一行：拖动手柄 + 序号 + 母名 */
+  .selection-row1 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+    width: 100%;
+  }
+
+  /* 第二行：父名 */
+  .selection-row2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+    width: 100%;
+  }
+
+  /* 第三行：标签 + Group + 性别 + 删除按钮 */
+  .selection-row3 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+    width: 100%;
+  }
+
+  /* 标签容器，允许标签内部换行 */
+  .selection-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    flex: 1;
     min-width: 0;
   }
 
   /* 马名允许换行，不使用省略号 */
   .selection-mother {
     font-size: 0.95rem;
-    word-break: break-word;
+    font-weight: bold;
+    word-break: normal;
     overflow-wrap: break-word;
     white-space: normal;
   }
@@ -912,24 +944,26 @@ body {
   .selection-father {
     font-size: 0.8rem;
     color: var(--text-secondary);
-    word-break: break-word;
+    word-break: normal;
+    overflow-wrap: break-word;
   }
 
   /* 次要元素：标签、Group、性别、删除按钮 - 空间不够时自动换行 */
   .selection-group,
   .selection-sex,
-  .remove-btn,
-  .horse-tag {
+  .remove-btn {
     flex-shrink: 0;
   }
 
   /* 标签样式 */
-  .horse-tag {
+  .selection-tags .horse-tag {
+    flex-shrink: 0;
     font-size: 0.7rem !important;
     padding: 3px 6px;
-    white-space: normal !important;
-    flex-shrink: 0;
+    white-space: nowrap;
   }
+
+  /* 标签样式 - 已移至 selection-tags 下 */
 
   /* Group徽章样式 */
   .selection-group {
@@ -945,7 +979,8 @@ body {
   .mother-name {
     width: 100%; /* 马名单独一行 */
     font-size: 1rem;
-    word-break: break-word;
+    word-break: normal;
+    overflow-wrap: break-word;
   }
 
   .mother-info-row .horse-tag {
@@ -1141,6 +1176,16 @@ body.dragging-active .drag-handle {
   font-size: 1.2rem;
   min-width: 25px;
   text-align: center;
+}
+
+.selection-sex.male {
+  color: #64b5f6;
+  text-shadow: 0 0 10px rgba(100, 181, 246, 0.5);
+}
+
+.selection-sex.female {
+  color: #f48fb1;
+  text-shadow: 0 0 10px rgba(244, 143, 177, 0.5);
 }
 
 .remove-btn {
@@ -1543,8 +1588,16 @@ body.dragging-active .drag-handle {
 /* 移动端响应式 */
 @media (max-width: 600px) {
   .theme-switcher {
-    top: 15px;
+    top: 10px;
     right: 10px;
+    z-index: 100;
+  }
+
+  .theme-toggle-btn {
+    padding: 10px 18px;
+    font-size: 1rem;
+    min-height: 44px;
+    min-width: 80px;
   }
 
   .theme-segment-item {
