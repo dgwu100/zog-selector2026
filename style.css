@@ -1028,6 +1028,39 @@ body {
   position: relative;
 }
 
+/* 电脑端选择列表项布局 - 使用行布局 */
+.selection-row1 {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+}
+
+.selection-row2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.selection-row3 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.selection-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  flex: 1;
+  min-width: 0;
+}
+
 .selection-empty {
   text-align: center;
   color: var(--text-secondary);
