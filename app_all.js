@@ -956,16 +956,41 @@ function renderSelections() {
     const sexIcon = horse.sex === 'male' ? '♂' : horse.sex === 'female' ? '♀' : '';
     const sexClass = horse.sex === 'male' ? 'male' : horse.sex === 'female' ? 'female' : '';
 
-    html += `<div class="selection-item" data-index="${index}">
-      <div class="selection-row1">
+    // 检测是否为移动端（屏幕宽度 <= 600px）
+    const isMobile = window.innerWidth <= 600;
+
+    if (isMobile) {
+      // 移动端：使用三行结构
+      html += `<div class="selection-item" data-index="${index}">
+        <div class="selection-row1">
+          <span class="drag-handle" draggable="true">☰</span>
+          <span class="selection-index">${index + 1}.</span>
+          <div class="selection-mother">母名：${horse.mother}</div>
+        </div>
+        <div class="selection-row2">
+          <span class="selection-father">父名：${horse.father}</span>
+        </div>
+        <div class="selection-row3">
+          <div class="selection-tags">${tagsHtml}</div>
+          <span class="selection-group ${groupClass}">G${horse.group}</span>
+          <span class="selection-sex ${sexClass}">${sexIcon}</span>
+          <button class="remove-btn" data-horse-id="${horse.horseId}">
+            <svg viewBox="0 0 24 24">
+              <path d="M3 6h18M8 6V4a2 2 0 012-2h4a2 2 0 012 2v2M19 6l-1 14a2 2 0 01-2 2H8a2 2 0 01-2-2L5 6"/>
+              <path d="M10 11v6M14 11v6"/>
+            </svg>
+          </button>
+        </div>
+      </div>`;
+    } else {
+      // 电脑端：使用扁平结构，父名在母名下方
+      html += `<div class="selection-item" data-index="${index}">
         <span class="drag-handle" draggable="true">☰</span>
         <span class="selection-index">${index + 1}.</span>
-        <div class="selection-mother">母名：${horse.mother}</div>
-      </div>
-      <div class="selection-row2">
-        <span class="selection-father">父名：${horse.father}</span>
-      </div>
-      <div class="selection-row3">
+        <span class="selection-info">
+          <span class="selection-mother">母名：${horse.mother}</span>
+          <span class="selection-father">父名：${horse.father}</span>
+        </span>
         <div class="selection-tags">${tagsHtml}</div>
         <span class="selection-group ${groupClass}">G${horse.group}</span>
         <span class="selection-sex ${sexClass}">${sexIcon}</span>
@@ -975,8 +1000,8 @@ function renderSelections() {
             <path d="M10 11v6M14 11v6"/>
           </svg>
         </button>
-      </div>
-    </div>`;
+      </div>`;
+    }
   });
 
   selectionList.innerHTML = html;
@@ -1317,3 +1342,13 @@ function validateSelections() {
     </div>`;
   }
 }
+
+// 窗口大小变化时重新渲染选择列表（切换移动端/电脑端布局）
+let lastIsMobile = window.innerWidth <= 600;
+window.addEventListener("resize", () => {
+  const currentIsMobile = window.innerWidth <= 600;
+  if (currentIsMobile !== lastIsMobile) {
+    lastIsMobile = currentIsMobile;
+    renderSelections();
+  }
+});

@@ -1029,29 +1029,42 @@ body {
   position: relative;
 }
 
-/* 电脑端选择列表项布局 - 使用行布局 */
-.selection-row1 {
+/* 电脑端选择列表项布局 - 扁平结构，父名在母名下方 */
+.selection-item {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   gap: 10px;
-  width: 100%;
+  padding: 12px 15px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  margin-bottom: 8px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  position: relative;
 }
 
-.selection-row2 {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 10px;
-  width: 100%;
+.selection-index {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  min-width: 25px;
 }
 
-.selection-row3 {
+.selection-info {
+  flex: 1;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 10px;
-  width: 100%;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 150px;
+}
+
+.selection-mother {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.selection-father {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
 }
 
 .selection-tags {
@@ -1067,22 +1080,6 @@ body {
   color: var(--text-secondary);
   padding: 30px;
   font-size: 0.9rem;
-}
-
-/* 电脑端选择列表项 - 纵向排列三行 */
-.selection-item {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: stretch;
-  justify-content: flex-start;
-  gap: 6px;
-  padding: 12px 15px;
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 10px;
-  margin-bottom: 8px;
-  transition: transform 0.2s, box-shadow 0.2s;
-  position: relative;
 }
 
 /* 拖动状态时整个 item 显示 grabbing */
