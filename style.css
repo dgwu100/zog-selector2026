@@ -1070,9 +1070,8 @@ body {
 
 .selection-item {
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 10px;
+  flex-direction: column;
+  gap: 6px;
   padding: 12px 15px;
   background: rgba(255, 255, 255, 0.05);
   border-radius: 10px;
