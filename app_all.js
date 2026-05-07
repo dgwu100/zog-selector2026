@@ -1250,8 +1250,9 @@ function validateSelections() {
   const g2Count = selectedHorses.filter(h => h.group === 2).length;
   const g3Count = selectedHorses.filter(h => h.group === 3).length;
 
-  // 计算种费<500万的G1数量（用于特殊规则检查）
-  const lowFeeG1Count = selectedHorses.filter(h => h.group === 1 && isLowFeeHorse(h)).length;
+  // 计算种费<500万的G1和G2数量（用于特殊规则检查）
+  const lowFeeInG1 = selectedHorses.filter(h => h.group === 1 && isLowFeeHorse(h)).length;
+  const lowFeeInG2 = selectedHorses.filter(h => h.group === 2 && isLowFeeHorse(h)).length;
 
   // 特殊规则1：同父限制扩展（通过检测同父超标数量来触发）
   // 用户通过超标行为"质押"G1上限，这个限制不可逆
@@ -1269,26 +1270,21 @@ function validateSelections() {
   const rule1Penalty = Math.min(neededExtensions, 2); // 特殊规则1最多触发2次
 
   // 特殊规则2：种费500万以下名额扩展
-  // 触发条件：≥2条低种费G1，G1上限+1
-  const rule2Bonus = lowFeeG1Count >= 2 ? 1 : 0;
+  // 触发条件：≥1条低种费G1且总共≥2条低种费马，G1上限+1
+  const rule2Bonus = (lowFeeInG1 >= 1 && lowFeeInG1 + lowFeeInG2 >= 2) ? 1 : 0;
 
   // 计算G1上限：基础5条 - 特殊规则1惩罚 + 特殊规则2奖励
   const maxG1Allowed = 5 - rule1Penalty + rule2Bonus;
 
-  // 验证特殊规则1触发次数
+  // 独立验证①：同父超标超过2次
   if (neededExtensions > 2) {
-    overLimitFathers.forEach(({ father }) => {
-      errors.push(`🐎 ${father} 产驹超标太多了，特殊规则1最多触发2次哦`);
-    });
+    const names = overLimitFathers.map(f => f.father).join('、');
+    errors.push(`🔨 ${names}产驹超标太多了，同种马上限最多触发2次啊喂`);
   }
 
-  // 验证G1数量
+  // 独立验证②：G1数量超限
   if (g1Count > maxG1Allowed) {
-    if (rule1Penalty > 0) {
-      errors.push('🔨 同种马上限规则只能触发两次啊喂');
-    } else {
-      errors.push('😧 不是哥们，连吃带拿啊？这么多G1');
-    }
+    errors.push('😧 不是哥们，你选这么多G1要干啥呀');
   }
   // G2上限：基础2条 + 未使用的G1名额
   const g1Shortage = Math.max(0, maxG1Allowed - g1Count);
